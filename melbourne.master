@@ -70,8 +70,7 @@
     }
   </style>
   
-  <!-- Custom stylesheets -->
-  <SharePoint:CssRegistration ID="CssRegistration1" name="<% $SPUrl:~sitecollection/_catalogs/masterpage/bootswatch/style.css %>" runat="server" after="SharepointCssFile" />
+  <!-- Custom stylesheets go here -->
   
   <!-- SharePoint scripts -->
   <SharePoint:StartScript runat="server" />
@@ -82,8 +81,7 @@
   <SharePoint:ScriptLink language="javascript" name="suitelinks.js" OnDemand="true" runat="server" Localizable="false" />
   <SharePoint:CustomJSUrl runat="server" />
   
-  <!-- Custom scripts -->
-  <SharePoint:Scriptlink runat="server" Name="~sitecollection/_catalogs/masterpage/bootswatch/script.min.js" />
+  <!-- Custom scripts go here -->
   
   <!-- Content managed page head content -->
   <SharePoint:AjaxDelta ID="DeltaPlaceHolderAdditionalPageHead" Container="false" runat="server">
@@ -107,12 +105,12 @@
     
     <asp:ScriptManager id="ScriptManager" runat="server" EnablePageMethods="false" EnablePartialRendering="true" EnableScriptGlobalization="false" EnableScriptLocalization="true" />
 
-    <div id="bs-ribbon">
+    <div class="ls-ribbon">
       <PublishingRibbon:PublishingRibbon runat="server"/>
     </div>
 
     <!-- Anything in this div is fixed to the top of the page -->
-    <div id="bs-fixed-top"></div>
+    <div class="ls-fixed-top"></div>
     
     <!-- Scrolling body starts here -->
     <div id="s4-workspace">
@@ -158,7 +156,7 @@
           </div>
           
           <!-- Content managed page title -->
-          <!-- #DeltaPlaceHolderPageTitleInTitleArea & #PlaceHolderPageTitleInTitleArea required for 'Add an app' -->
+          <!-- Note: #DeltaPlaceHolderPageTitleInTitleArea & #PlaceHolderPageTitleInTitleArea required for 'Add an app' -->
           <div class="ms-dialogHidden">
             <SharePoint:AjaxDelta id="DeltaPlaceHolderPageTitleInTitleArea" runat="server">
               <asp:ContentPlaceHolder id="PlaceHolderPageTitleInTitleArea" runat="server">
@@ -231,7 +229,7 @@
       </asp:ContentPlaceHolder>
     </SharePoint:AjaxDelta>
     
-    <!-- Useless placeholders -->   
+    <!-- Generally useless placeholders -->   
     <asp:ContentPlaceHolder id="PlaceHolderBodyAreaClass" Visible="False" runat="server" />
     <asp:ContentPlaceHolder id="PlaceHolderTitleAreaClass" Visible="False" runat="server" />
     <asp:ContentPlaceHolder id="PlaceHolderTitleBreadcrumb" Visible="False" runat="server" />
@@ -259,6 +257,6 @@
   </SharePoint:AjaxDelta>
 </body>
 
-<!-- Modified by Lambros Symeonakis - 19/09/2014 -->
+<!-- Modified by Lambros Symeonakis -->
 <!-- Created from Starter SP2013 Master Page originally by Randy Drisgill (http://blog.drisgill.com) - April 21, 2013 -->
 </SharePoint:SPHtmlTag>

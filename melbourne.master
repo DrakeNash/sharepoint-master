@@ -136,7 +136,7 @@
           
           <!-- Content managed global navigation -->
           <div class="ms-dialogHidden">
-            <SharePoint:AjaxDelta ID="DeltaTopNavigation" BlockElement="true" CssClass="ms-displayInline ms-core-navigation ms-dialogHidden" runat="server">
+            <SharePoint:AjaxDelta ID="DeltaTopNavigation" BlockElement="true" CssClass="" runat="server">
               <SharePoint:DelegateControl runat="server" ControlId="TopNavigationDataSource" Id="TopNavigationDelegate">
                 <Template_Controls>
                   <asp:SiteMapDataSource ShowStartingNode="False" SiteMapProvider="SPNavigationProvider" id="topSiteMap" runat="server" StartingNodeUrl="sid:1002"/>
@@ -170,7 +170,7 @@
           </div>
           
           <div class="ms-dialogHidden">
-            <SharePoint:AjaxDelta BlockElement="true" id="DeltaPlaceHolderPageDescription" CssClass="ms-displayInlineBlock ms-normalWrap" runat="server">
+            <SharePoint:AjaxDelta BlockElement="true" id="DeltaPlaceHolderPageDescription" CssClass="" runat="server">
               <asp:ContentPlaceHolder id="PlaceHolderPageDescription" runat="server" />
             </SharePoint:AjaxDelta>
           </div>
@@ -209,7 +209,7 @@
               </SharePoint:SPNavigationManager>
               
               <asp:ContentPlaceHolder id="PlaceHolderQuickLaunchBottom" runat="server">
-                <div class="ms-core-listMenu-verticalBox"><SharePoint:ClusteredSPLinkButton runat="server" id="idNavLinkViewAll" PermissionsString="ViewFormPages" NavigateUrl="~site/_layouts/15/viewlsts.aspx" Text="<%$Resources:wss,AllSiteContentMore%>" accesskey="<%$Resources:wss,quiklnch_allcontent_AK%>" CssClass="ms-core-listMenu-item ms-core-listMenu-heading" /></div>
+                <div class=""><SharePoint:ClusteredSPLinkButton runat="server" id="idNavLinkViewAll" PermissionsString="ViewFormPages" NavigateUrl="~site/_layouts/15/viewlsts.aspx" Text="<%$Resources:wss,AllSiteContentMore%>" accesskey="<%$Resources:wss,quiklnch_allcontent_AK%>" CssClass="" /></div>
               </asp:ContentPlaceHolder>
             </asp:ContentPlaceHolder>
           </SharePoint:AjaxDelta>

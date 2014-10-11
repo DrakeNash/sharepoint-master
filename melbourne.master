@@ -1,40 +1,50 @@
 <%@Master language="C#"%>
-<%@ Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %> <%@ Register Tagprefix="Utilities" Namespace="Microsoft.SharePoint.Utilities" Assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %> <%@ Import Namespace="Microsoft.SharePoint" %> <%@ Assembly Name="Microsoft.Web.CommandUI, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register Tagprefix="Utilities" Namespace="Microsoft.SharePoint.Utilities" Assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Import Namespace="Microsoft.SharePoint" %>
+<%@ Assembly Name="Microsoft.Web.CommandUI, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <%@ Import Namespace="Microsoft.SharePoint.ApplicationPages" %>
 <%@ Register Tagprefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <%@ Register TagPrefix="wssuc" TagName="Welcome" src="~/_controltemplates/15/Welcome.ascx" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+  
+<!DOCTYPE html>
 <SharePoint:SPHtmlTag dir="<%$Resources:wss,multipages_direction_dir_value%>" ID="SPHtmlTag" runat="server" >
-<head runat="server">
-	<meta name="GENERATOR" content="Microsoft SharePoint" />
-	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=10"/>
-	<meta http-equiv="Expires" content="0" />
-	<SharePoint:SPPinnedSiteTile runat="server" TileUrl="/_layouts/15/images/SharePointMetroAppTile.png" TileColor="#0072C6" />
-	<SharePoint:RobotsMetaTag runat="server"/>
-	<SharePoint:PageTitle runat="server">
-		<asp:ContentPlaceHolder id="PlaceHolderPageTitle" runat="server">
-			<SharePoint:ProjectProperty Property="Title" runat="server" />
-		</asp:ContentPlaceHolder>
-	</SharePoint:PageTitle>
-	<SharePoint:SPShortcutIcon runat="server" IconUrl="/_layouts/15/images/favicon.ico?rev=38" />
-	<SharePoint:StartScript runat="server" />
-	<SharePoint:CssLink runat="server" Version="15"/>
-	<SharePoint:ScriptLink language="javascript" name="core.js" OnDemand="true" runat="server" Localizable="false" />
-	<SharePoint:ScriptLink language="javascript" name="menu.js" OnDemand="true" runat="server" Localizable="false" />
-	<SharePoint:ScriptLink language="javascript" name="callout.js" OnDemand="true" runat="server" Localizable="false" />
-	<SharePoint:ScriptLink language="javascript" name="sharing.js" OnDemand="true" runat="server" Localizable="false" />
-	<SharePoint:ScriptLink language="javascript" name="suitelinks.js" OnDemand="true" runat="server" Localizable="false" />
-	<SharePoint:CustomJSUrl runat="server" />
-	<SharePoint:SoapDiscoveryLink runat="server" />
-	<SharePoint:AjaxDelta id="DeltaPlaceHolderAdditionalPageHead" Container="false" runat="server">
-		<asp:ContentPlaceHolder id="PlaceHolderAdditionalPageHead" runat="server" />
-		<SharePoint:DelegateControl runat="server" ControlId="AdditionalPageHead" AllowMultipleControls="true" />
-		<asp:ContentPlaceHolder id="PlaceHolderBodyAreaClass" Visible="true" runat="server" />
-	</SharePoint:AjaxDelta>
-	<SharePoint:CssRegistration Name="Themable/corev15.css" runat="server" />
-</head>
+
+  <head runat="server">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10"/>
+    <meta http-equiv="Expires" content="0" />
+    
+    <SharePoint:RobotsMetaTag runat="server"/>
+    <SharePoint:SoapDiscoveryLink runat="server" />
+
+    <SharePoint:SPShortcutIcon runat="server" IconUrl="/_layouts/15/images/favicon.ico?rev=38" />
+    <SharePoint:SPPinnedSiteTile runat="server" TileUrl="/_layouts/15/images/SharePointMetroAppTile.png" TileColor="#0072C6" />
+    
+    <SharePoint:PageTitle runat="server">
+      <asp:ContentPlaceHolder id="PlaceHolderPageTitle" runat="server">
+        <SharePoint:ProjectProperty Property="Title" runat="server" />
+      </asp:ContentPlaceHolder>
+    </SharePoint:PageTitle>
+    
+    <SharePoint:CssLink runat="server" Version="15"/>
+    <SharePoint:CssRegistration Name="Themable/corev15.css" runat="server" />
+    
+    <SharePoint:StartScript runat="server" />
+    <SharePoint:ScriptLink language="javascript" name="core.js" OnDemand="true" runat="server" Localizable="false" />
+    <SharePoint:ScriptLink language="javascript" name="menu.js" OnDemand="true" runat="server" Localizable="false" />
+    <SharePoint:ScriptLink language="javascript" name="callout.js" OnDemand="true" runat="server" Localizable="false" />
+    <SharePoint:ScriptLink language="javascript" name="sharing.js" OnDemand="true" runat="server" Localizable="false" />
+    <SharePoint:ScriptLink language="javascript" name="suitelinks.js" OnDemand="true" runat="server" Localizable="false" />
+    <SharePoint:CustomJSUrl runat="server" />
+
+    <SharePoint:AjaxDelta id="DeltaPlaceHolderAdditionalPageHead" Container="false" runat="server">
+      <asp:ContentPlaceHolder id="PlaceHolderAdditionalPageHead" runat="server" />
+        <SharePoint:DelegateControl runat="server" ControlId="AdditionalPageHead" AllowMultipleControls="true" />
+      <asp:ContentPlaceHolder id="PlaceHolderBodyAreaClass" Visible="true" runat="server" />
+    </SharePoint:AjaxDelta>
+  </head>
+  
 <body>
   <SharePoint:ImageLink runat="server"/>
   <SharePoint:SPNoScript runat="server"/>

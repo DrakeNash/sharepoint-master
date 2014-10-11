@@ -11,4 +11,4 @@ Because starting a branding project using Oslo.master or Seattle.master is unnec
 * Unstyled
 * Minimal
 * Responsive
-* Device-friendly
+* Mobile-first

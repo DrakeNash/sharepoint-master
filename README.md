@@ -13,4 +13,4 @@ You could use some other SharePoint master page templates, but even those come w
 * Unstyled
 * Minimal
 * Responsive
-* Mobile-first
+* Device-friendly

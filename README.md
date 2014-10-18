@@ -1,10 +1,10 @@
 #SharePoint-Master
 
-SharePoint Online minimal master page. Provides a solid starting point for any branding work.
+SharePoint minimal master pages. Provides a solid starting point for any branding work.
 
 ## What is it?
 
-It's the bare minimum master page to start your own branding project for SharePoint Online. Don't expect it to look pretty without some development love.
+It's the bare minimum master page to start your own branding project for SharePoint. Don't expect it to look pretty without some development love.
 
 ## Why?
 

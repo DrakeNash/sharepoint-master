@@ -34,6 +34,10 @@
 	<!-- Stardard icons and images -->
 	<SharePoint:SPShortcutIcon runat="server" IconUrl="http://placehold.it/48x48.png" />
 	<link rel="icon" sizes="192x192" href="http://placehold.it/192x192.png" />
+  
+  <!-- Windows 8 tile -->
+  <meta name="msapplication-TileImage" content="http://placehold.it/144x144.png" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
 
 	<!-- iOS icons and images -->
 	<link href="http://placehold.it/57x57.png" sizes="57x57" rel="apple-touch-icon" />
@@ -360,15 +364,13 @@
 			</div>
 		</div>
 		
-		<div class="ls-fixed-top">
-		</div>
-		
+     <!-- Scrolling body starts here -->
 		<div ID="s4-workspace">
 			<div ID="s4-bodyContainer">
 				<div id="MSO_ContentDiv" runat="server">
 					<div class="s4-notdlg">
 						<SharePoint:SPLinkButton runat="server" NavigateUrl="~sitecollection/">
-							<SharePoint:SiteLogoImage  LogoImageUrl="/Style Library/sitename/logo.png" runat="server"/>
+							<SharePoint:SiteLogoImage  LogoImageUrl="http://placehold.it/200x100" runat="server"/>
 						</SharePoint:SPLinkButton>	
 					</div>
 
@@ -383,6 +385,7 @@
 						<SharePoint:AspMenu ID="TopNavigationMenuV4" EncodeTitle="false" Runat="server" EnableViewState="false" DataSourceID="topSiteMap" AccessKey="<%$Resources:wss,navigation_accesskey%>" UseSimpleRendering="true" UseSeparateCss="false" Orientation="Horizontal" StaticDisplayLevels="1" MaximumDynamicDisplayLevels="1" SkipLinkText="" CssClass="" />
 					</div>
 
+              <!-- Notifications -->
 					<div class="s4-notdlg">
 						<div id="s4-statusbarcontainer">
 							<div id="pageStatusBar" class="s4-status-s1"></div>

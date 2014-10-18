@@ -33,8 +33,10 @@
   
   <!-- Stardard icons and images -->
   <SharePoint:SPShortcutIcon runat="server" IconUrl="http://placehold.it/48x48.png" />
-  <SharePoint:SPPinnedSiteTile runat="server" TileUrl="http://placehold.it/144x144.png" TileColor="#ffffff" />
   <link rel="icon" sizes="192x192" href="http://placehold.it/192x192.png" />
+  
+  <!-- Windows 8 tile -->
+  <SharePoint:SPPinnedSiteTile runat="server" TileUrl="http://placehold.it/144x144.png" TileColor="#ffffff" />
   
   <!-- iOS icons and images -->
   <link href="http://placehold.it/57x57.png" sizes="57x57" rel="apple-touch-icon" />
@@ -109,9 +111,6 @@
     <div class="ls-ribbon">
       <PublishingRibbon:PublishingRibbon runat="server"/>
     </div>
-
-    <!-- Anything in this div is fixed to the top of the page -->
-    <div class="ls-fixed-top"></div>
     
     <!-- Scrolling body starts here -->
     <div id="s4-workspace">
